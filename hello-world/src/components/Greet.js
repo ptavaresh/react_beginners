@@ -5,13 +5,12 @@ import React from 'react'
 // }
 
 export const Greet = (props) => {
-    console.log(props)
+    const {name, heroName} = props
     return (
         <div>
-            <h1>
-                Hello { props.name } you are { props.heroName }
-            </h1>
-            {props.children}
+        <h1>
+            Hello { name } you are { heroName }
+        </h1>
         </div>
     )
 }
